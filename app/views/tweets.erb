@@ -1,0 +1,13 @@
+<div class="container">
+  <% if @error %>
+    <%= @error %>
+  <% else %>
+  <ul>
+    <% @tweets.each do|tweet|  %>
+    <li> <%= tweet.text %></li>
+    <% end %>
+  </ul>
+  <% end %>
+</div>
+
+<a href="/tweet_form">New Tweet</a>
